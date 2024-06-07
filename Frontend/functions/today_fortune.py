@@ -9,6 +9,6 @@ def execute(
 ) -> OutputModel | None:
     return page.settings.client.call(
         function=page.function,
-        input=real_val,
+        input=model,
         output_model=OutputModel,
     )
